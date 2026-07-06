@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased selection:bg-crimson-100 selection:text-crimson-800 dark:selection:bg-crimson-900 dark:selection:text-crimson-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Glassmorphism custom classes */
+.glass-nav {
+  @apply bg-spiritual-cream/70 dark:bg-spiritual-charcoal/70 backdrop-blur-md border-b border-crimson-100/10 dark:border-white/5 shadow-glass-light dark:shadow-glass-dark;
+}
+
+.glass-card {
+  @apply bg-white/40 dark:bg-spiritual-zincDark/40 backdrop-blur-sm border border-crimson-100/10 dark:border-white/5 shadow-glass-light dark:shadow-glass-dark;
+}
+
+.glass-panel {
+  @apply bg-white/60 dark:bg-spiritual-zincDark/60 backdrop-blur-md border border-crimson-100/15 dark:border-white/10 shadow-glass-light dark:shadow-glass-dark;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-crimson-800/20 dark:bg-white/10 rounded-full hover:bg-crimson-800/40 dark:hover:bg-white/20 transition-all;
+}
+
+/* Audio Player Progress Scrub bar styling */
+input[type="range"] {
+  accent-color: #8b0000;
+}
+.dark input[type="range"] {
+  accent-color: #d4af37;
+}
+
+/* Custom gold outline text or gold glow */
+.gold-glow {
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.4), 0 0 24px rgba(212, 175, 55, 0.15);
+}
+
+.crimson-glow {
+  box-shadow: 0 0 40px rgba(139, 0, 0, 0.15);
+}
+
+.dark .crimson-glow {
+  box-shadow: 0 0 40px rgba(163, 38, 38, 0.25);
+}
+
+/* Pulsing ambient glow for centers */
+@keyframes soft-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.35;
+  }
+}
+
+.ambient-glow {
+  animation: soft-pulse 8s ease-in-out infinite;
+}
