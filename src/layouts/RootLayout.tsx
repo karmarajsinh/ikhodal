@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { AudioPlayer } from '../components/AudioPlayer';
-import { Sun, Moon, Menu, X, Home, Music, Compass, BookOpen, Heart } from 'lucide-react';
+import { Sun, Moon, Menu, X, Home, Video, Compass, BookOpen, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const RootLayout: React.FC = () => {
@@ -37,7 +37,7 @@ export const RootLayout: React.FC = () => {
 
   const navLinks = [
     { to: '/', label: 'Home', icon: Home },
-    { to: '/desk', label: 'Devotional Desk', icon: Music },
+    { to: '/desk', label: 'Devotional Desk', icon: Video },
     { to: '/temples', label: 'Temple Locator', icon: Compass },
     { to: '/about', label: 'Maa Legacy', icon: BookOpen },
   ];

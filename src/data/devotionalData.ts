@@ -222,8 +222,8 @@ export const DEVOTIONAL_VIDEOS: DevotionalVideo[] = [
     title: 'Shree Khodiyar Chalisa',
     gujaratiTitle: 'શ્રી ખોડિયાર ચાલીસા',
     singer: 'Hemant Chauhan',
-    youtubeId: '1u4Y1_d6PzE',
-    duration: '06:12',
+    youtubeId: 'g9irbYVi0cE',
+    duration: '12:10',
     description: 'A powerful, traditional recitation of the 40-verse prayer praising the glory and protection of Maa Khodiyar.'
   },
   {
@@ -231,8 +231,8 @@ export const DEVOTIONAL_VIDEOS: DevotionalVideo[] = [
     title: 'Khodiyar Maa Bavni',
     gujaratiTitle: 'ખોડિયાર મા બાવની',
     singer: 'Ruchita Prajapati',
-    youtubeId: 'DHz31fXm3nU',
-    duration: '13:10',
+    youtubeId: 'nU7_DUkDTFs',
+    duration: '17:23',
     description: '52 sacred verses describing the lineage, divine manifestations, and miraculous parchas of the goddess.'
   },
   {
@@ -240,8 +240,8 @@ export const DEVOTIONAL_VIDEOS: DevotionalVideo[] = [
     title: 'Arji Suni Ne Aai',
     gujaratiTitle: 'અરજી સૂણીને આઈ',
     singer: 'Devraj Gadhvi (Nano Dero)',
-    youtubeId: '3PjQn0L7bLg',
-    duration: '06:44',
+    youtubeId: 'jYYt8ZNebS8',
+    duration: '03:49',
     description: 'A popular, heart-touching prayer pleading to the mother goddess to hear the devotee\'s call.'
   },
   {
@@ -249,8 +249,8 @@ export const DEVOTIONAL_VIDEOS: DevotionalVideo[] = [
     title: 'Galadhare Thi Maji Nisarya',
     gujaratiTitle: 'ગળધરે થી માજી નીસર્યા',
     singer: 'Kirtidan Gadhvi',
-    youtubeId: 'vD0l_W_Nfg4',
-    duration: '08:15',
+    youtubeId: 'GqKKOJcSJ-Q',
+    duration: '08:58',
     description: 'A soul-stirring live performance by Kirtidan Gadhvi detailing the emergence of Maa from the Galdhara pool.'
   }
 ];
