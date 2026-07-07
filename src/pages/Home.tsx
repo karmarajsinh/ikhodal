@@ -99,7 +99,7 @@ export const Home: React.FC = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-base md:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl mx-auto md:mx-0 font-sans"
           >
-            Welcome to the digital sanctuary of Maa Khodiyar. Experience peaceful temple views, explore the history of Matel Dhuna, and listen to sacred Aartis, Stutis, and Mantras, keeping you connected wherever you are.
+            Welcome to the digital sanctuary of Maa Khodiyar. Experience peaceful temple views, explore the history of Matel Dham, and listen to sacred Aartis, Stutis, and Mantras, keeping you connected wherever you are.
           </motion.p>
 
           <motion.div
@@ -268,6 +268,7 @@ export const Home: React.FC = () => {
                   src={featuredShrines[activeShrineIndex].image}
                   alt={featuredShrines[activeShrineIndex].name}
                   className="w-full h-full object-cover select-none scale-102"
+                  onError={(e) => { e.currentTarget.src = '/assets/hero.png'; }}
                 />
                 <div className="absolute bottom-6 left-6 z-20">
                   <span className="flex items-center gap-1.5 text-xs text-white/95 bg-black/40 backdrop-blur-md rounded-full px-3 py-1 font-sans border border-white/10 w-fit">
@@ -331,7 +332,7 @@ export const Home: React.FC = () => {
                 Daily Darshan Live Feed
               </h3>
               <p className="text-xs text-zinc-500 dark:text-zinc-400 font-sans mb-6">
-                Freshly uploaded screenshots from the main shrines of Matel Dhuna and Kagvad (Khodaldham) as of today.
+                Freshly uploaded screenshots from the main shrines of Matel Dham and Kagvad (Khodaldham) as of today.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -341,9 +342,10 @@ export const Home: React.FC = () => {
                       src={TEMPLES_DATA[0].image}
                       alt="Matel Darshan"
                       className="w-full h-full object-cover"
+                      onError={(e) => { e.currentTarget.src = '/assets/hero.png'; }}
                     />
                     <span className="absolute bottom-2 left-2 bg-black/60 px-2 py-0.5 text-[10px] text-white rounded font-sans">
-                      Matel Dhuna
+                      Matel Dham
                     </span>
                   </div>
                   <p className="text-xs font-semibold text-center text-zinc-700 dark:text-zinc-300">Mangla Darshan - Matel</p>
@@ -355,6 +357,7 @@ export const Home: React.FC = () => {
                       src={TEMPLES_DATA[2].image}
                       alt="Kagvad Darshan"
                       className="w-full h-full object-cover"
+                      onError={(e) => { e.currentTarget.src = '/assets/hero.png'; }}
                     />
                     <span className="absolute bottom-2 left-2 bg-black/60 px-2 py-0.5 text-[10px] text-white rounded font-sans">
                       Khodaldham

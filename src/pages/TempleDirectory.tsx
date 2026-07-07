@@ -147,6 +147,7 @@ export const TempleDirectory: React.FC = () => {
                       src={temple.image}
                       alt={temple.name}
                       className="w-full h-full object-cover select-none transform hover:scale-102 transition-transform duration-500"
+                      onError={(e) => { e.currentTarget.src = '/assets/hero.png'; }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                     

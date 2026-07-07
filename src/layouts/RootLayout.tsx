@@ -214,7 +214,7 @@ export const RootLayout: React.FC = () => {
               Maa Holy Shrines
             </h4>
             <ul className="space-y-2 text-xs text-zinc-600 dark:text-zinc-400 font-sans">
-              <li><NavLink to="/temples" className="hover:text-crimson-800 dark:hover:text-gold transition-colors">Matel Dhuna (Morbi)</NavLink></li>
+              <li><NavLink to="/temples" className="hover:text-crimson-800 dark:hover:text-gold transition-colors">Matel Dham (Morbi)</NavLink></li>
               <li><NavLink to="/temples" className="hover:text-crimson-800 dark:hover:text-gold transition-colors">Rajpara Mandir (Bhavnagar)</NavLink></li>
               <li><NavLink to="/temples" className="hover:text-crimson-800 dark:hover:text-gold transition-colors">Khodaldham (Kagvad)</NavLink></li>
               <li><NavLink to="/temples" className="hover:text-crimson-800 dark:hover:text-gold transition-colors">Galdhara (Dhari)</NavLink></li>
