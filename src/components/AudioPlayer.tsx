@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useAudio } from '../context/AudioContext';
-import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX, Music, BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
+import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX, Music, Video, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const AudioPlayer: React.FC = () => {
@@ -49,11 +50,14 @@ export const AudioPlayer: React.FC = () => {
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-spiritual-cream/80 dark:bg-spiritual-charcoal/80 border-t border-crimson-100/10 dark:border-white/5 backdrop-blur-lg px-6 py-4 shadow-lg text-center text-sm text-zinc-500 dark:text-zinc-400">
         <p className="flex items-center justify-center gap-2 font-sans">
           <Music className="w-4 h-4 text-crimson-800 dark:text-gold" />
-          Select a devotional track from the{' '}
-          <a href="/desk" className="underline font-medium text-crimson-800 dark:text-gold hover:opacity-85">
-            Devotional Desk
-          </a>{' '}
-          to play divine prayers.
+          Select an audio track on the{' '}
+          <NavLink to="/" className="underline font-medium text-crimson-800 dark:text-gold hover:opacity-85">
+            Home Page
+          </NavLink>{' '}
+          to play divine prayers, or watch video bhajans on our{' '}
+          <NavLink to="/desk" className="underline font-medium text-crimson-850 dark:text-gold hover:opacity-85">
+            Video Desk
+          </NavLink>.
         </p>
       </div>
     );
@@ -207,14 +211,14 @@ export const AudioPlayer: React.FC = () => {
               </button>
 
               <div className="flex items-center gap-4">
-                {/* Quick lyrics link */}
-                <a
-                  href="/desk"
+                {/* Quick video desk link */}
+                <NavLink
+                  to="/desk"
                   className="flex items-center gap-1.5 text-xs text-zinc-500 hover:text-crimson-800 dark:text-zinc-400 dark:hover:text-gold transition-colors border border-zinc-200 dark:border-zinc-800 rounded-full px-3 py-1 bg-white/30 dark:bg-zinc-900/30"
                 >
-                  <BookOpen className="w-3.5 h-3.5" />
-                  <span className="hidden sm:inline">Lyrics Sync</span>
-                </a>
+                  <Video className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">Video Desk</span>
+                </NavLink>
 
                 <div className="flex items-center gap-2 shrink-0">
                   <button
