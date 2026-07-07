@@ -14,8 +14,8 @@ export const AppRoutes: React.FC = () => {
         <Route path="desk" element={<DevotionalDesk />} />
         <Route path="temples" element={<TempleDirectory />} />
         <Route path="about" element={<AboutHistory />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };

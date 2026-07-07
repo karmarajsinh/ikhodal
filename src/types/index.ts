@@ -33,7 +33,18 @@ export interface DevotionalTrack {
   duration: string; // MM:SS format
   audioUrl: string;
   singer: string;
-  lyrics: LyricLine[];
+  lyrics: string; // Simplified string block format
+  subtitle?: string; // Optional track description/subtitle
+}
+
+export interface DevotionalVideo {
+  id: string;
+  title: string;
+  gujaratiTitle: string;
+  singer: string;
+  youtubeId: string;
+  duration: string;
+  description: string;
 }
 
 export interface TithiEvent {
