@@ -47,15 +47,21 @@ export const AudioPlayer: React.FC = () => {
 
   if (!currentTrack) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-spiritual-cream/80 dark:bg-spiritual-charcoal/80 border-t border-crimson-100/10 dark:border-white/5 backdrop-blur-lg px-6 py-4 shadow-lg text-center text-sm text-zinc-500 dark:text-zinc-400">
+      <div className="hidden md:block fixed bottom-0 left-0 right-0 z-40 bg-spiritual-cream/80 dark:bg-spiritual-charcoal/80 border-t border-crimson-100/10 dark:border-white/5 backdrop-blur-lg px-6 py-4 shadow-lg text-center text-sm text-zinc-500 dark:text-zinc-400">
         <p className="flex items-center justify-center gap-2 font-sans">
           <Music className="w-4 h-4 text-crimson-800 dark:text-gold" />
-          Select an audio track on the{' '}
-          <NavLink to="/" className="underline font-medium text-crimson-800 dark:text-gold hover:opacity-85">
+          Select an audio track on the{" "}
+          <NavLink
+            to="/"
+            className="underline font-medium text-crimson-800 dark:text-gold hover:opacity-85"
+          >
             Home Page
-          </NavLink>{' '}
-          to play divine prayers, or watch video bhajans on our{' '}
-          <NavLink to="/desk" className="underline font-medium text-crimson-850 dark:text-gold hover:opacity-85">
+          </NavLink>{" "}
+          to play divine prayers, or watch video bhajans on our{" "}
+          <NavLink
+            to="/desk"
+            className="underline font-medium text-crimson-850 dark:text-gold hover:opacity-85"
+          >
             Video Desk
           </NavLink>.
         </p>
@@ -84,7 +90,7 @@ export const AudioPlayer: React.FC = () => {
             <div className="relative w-8 h-8 rounded-full bg-gradient-to-tr from-crimson-800 to-gold flex items-center justify-center text-white shrink-0 shadow-md">
               <Music className={`w-4 h-4 ${isPlaying ? 'animate-[spin_4s_linear_infinite]' : ''}`} />
             </div>
-            
+
             <div className="max-w-[120px] sm:max-w-[180px] min-w-0">
               <h5 className="text-xs font-bold text-zinc-950 dark:text-zinc-50 truncate leading-none">
                 {currentTrack.title}
@@ -138,7 +144,7 @@ export const AudioPlayer: React.FC = () => {
             <div className="flex items-center gap-4 w-full md:w-1/4 min-w-0">
               <div className="relative w-12 h-12 bg-gradient-to-tr from-crimson-800 to-gold rounded-lg flex items-center justify-center text-white shrink-0 shadow-md">
                 <Music className={`w-6 h-6 ${isPlaying ? 'animate-pulse' : ''}`} />
-                
+
                 {/* Animated equalizer waves */}
                 {isPlaying && (
                   <div className="absolute bottom-1 flex items-end gap-0.5 h-3 justify-center">
@@ -148,7 +154,7 @@ export const AudioPlayer: React.FC = () => {
                   </div>
                 )}
               </div>
-              
+
               <div className="min-w-0 pr-4">
                 <h4 className="text-sm font-semibold text-zinc-950 dark:text-zinc-50 truncate">
                   {currentTrack.title}

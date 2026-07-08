@@ -57,10 +57,10 @@ export const Home: React.FC = () => {
 
   return (
     <div className="flex-1 flex flex-col items-center">
-      
+
       {/* Hero Section */}
       <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden">
-        
+
         {/* Soft Ambient Glows */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-gradient-to-tr from-gold/15 to-crimson-800/10 rounded-full blur-3xl ambient-glow -z-10" />
 
@@ -74,7 +74,7 @@ export const Home: React.FC = () => {
           >
             🛕 The Spiritual Gateway of Gujarat
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -99,7 +99,7 @@ export const Home: React.FC = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-base md:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl mx-auto md:mx-0 font-sans"
           >
-            Welcome to the digital sanctuary of Maa Khodiyar. Experience peaceful temple views, explore the history of Matel Dham, and listen to sacred Aartis, Stutis, and Mantras, keeping you connected wherever you are.
+            Welcome to the digital sanctuary of Maa Khodiyar. Experience the serenity of the temple, explore the rich history of Matel Dham, and watch devotional bhajans, Aartis, and spiritual videos that keep you connected to Maa Khodiyar from anywhere.
           </motion.p>
 
           <motion.div
@@ -108,18 +108,18 @@ export const Home: React.FC = () => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="flex flex-wrap gap-4 items-center justify-center md:justify-start"
           >
-            <button
+            {/* <button
               onClick={() => playTrack(DEVOTIONAL_TRACKS[1])} // play Khodiyar Maa Aarti
               className="px-6 py-3 rounded-full bg-crimson-800 hover:bg-crimson-700 text-white font-medium shadow-md transition-all flex items-center gap-2 hover:translate-y-[-1px] font-sans text-sm"
             >
               <Volume2 className="w-5 h-5 shrink-0" /> Play Sacred Aarti
-            </button>
-            <NavLink
+            </button> */}
+            {/* <NavLink
               to="/desk"
               className="px-6 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 hover:border-crimson-800 dark:hover:border-gold hover:text-crimson-800 dark:hover:text-gold text-zinc-700 dark:text-zinc-300 font-medium transition-all flex items-center gap-1.5 font-sans text-sm"
             >
               Devotional Desk <ArrowRight className="w-4 h-4" />
-            </NavLink>
+            </NavLink> */}
           </motion.div>
         </div>
 
@@ -144,17 +144,17 @@ export const Home: React.FC = () => {
               {/* Sacred Halo */}
               <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
               <circle cx="50" cy="50" r="26" fill="none" stroke="currentColor" strokeWidth="0.5" />
-              
+
               {/* Trident (Trishul) Vector */}
               <rect x="48.5" y="25" width="3" height="60" rx="1.5" />
               <path d="M49 45 C41 45, 38 35, 38 28 C38 28, 40.5 28, 41 28 C41 33, 44 41.5, 49 42 Z" />
               <path d="M51 45 C59 45, 62 35, 62 28 C62 28, 59.5 28, 59 28 C59 33, 56 41.5, 51 42 Z" />
-              
+
               <path d="M47 25 L50 16 L53 25 Z" />
               <circle cx="50" cy="24" r="1.5" className="text-crimson-800 dark:text-crimson-400" fill="currentColor" />
               <circle cx="39.5" cy="28" r="1" />
               <circle cx="60.5" cy="28" r="1" />
-              
+
               <path d="M44 54 L56 50 L56 58 L44 54 Z" fill="currentColor" />
               <path d="M56 54 L44 50 L44 58 L56 54 Z" fill="currentColor" />
               <path d="M50 54 Q46 64, 42 66" fill="none" stroke="currentColor" strokeWidth="0.75" />
@@ -164,7 +164,7 @@ export const Home: React.FC = () => {
 
               <path d="M36 82 C36 80, 42 78, 50 78 C58 78, 64 80, 64 82 C64 83, 58 84, 50 84 C42 84, 36 83, 36 82 Z" fill="none" stroke="currentColor" strokeWidth="0.7" />
             </svg>
-            
+
             {/* Soft Ambient Floating Dust particles */}
             <div className="absolute inset-0 pointer-events-none select-none">
               <span className="absolute top-1/4 left-1/4 w-1.5 h-1.5 bg-gold/50 rounded-full animate-ping" />
@@ -334,7 +334,7 @@ export const Home: React.FC = () => {
               <p className="text-xs text-zinc-500 dark:text-zinc-400 font-sans mb-6">
                 Freshly uploaded screenshots from the main shrines of Matel Dham and Kagvad (Khodaldham) as of today.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <div className="h-64 rounded-xl bg-zinc-800/10 dark:bg-zinc-900 overflow-hidden relative border border-zinc-200/10">
@@ -350,7 +350,7 @@ export const Home: React.FC = () => {
                   </div>
                   <p className="text-xs font-semibold text-center text-zinc-700 dark:text-zinc-300">Mangla Darshan - Matel</p>
                 </div>
-                
+
                 <div className="space-y-2">
                   <div className="h-64 rounded-xl bg-zinc-800/10 dark:bg-zinc-900 overflow-hidden relative border border-zinc-200/10">
                     <img
@@ -366,7 +366,7 @@ export const Home: React.FC = () => {
                   <p className="text-xs font-semibold text-center text-zinc-700 dark:text-zinc-300 font-sans">Shangar Darshan - Kagvad</p>
                 </div>
               </div>
-              
+
               <div className="mt-8 pt-4 border-t border-zinc-200 dark:border-zinc-800 flex justify-end">
                 <button
                   onClick={() => setDarshanModalOpen(false)}
@@ -404,7 +404,7 @@ export const Home: React.FC = () => {
               <h3 className="text-2xl font-serif font-bold text-crimson-800 dark:text-gold mb-6">
                 Aarti Broadcast Times
               </h3>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-3 rounded-lg bg-zinc-500/5 border border-zinc-200/50 dark:border-zinc-800/50">
                   <div>
@@ -430,7 +430,7 @@ export const Home: React.FC = () => {
                   <span className="text-sm font-serif font-bold text-crimson-800 dark:text-gold">07:30 PM</span>
                 </div>
               </div>
-              
+
               <div className="mt-8 pt-4 border-t border-zinc-200 dark:border-zinc-800 text-center col-span-full">
                 <p className="text-xs text-zinc-500 dark:text-zinc-400 font-sans mb-4">
                   Note: Audio recordings are available on-demand inside the Devotional Desk.
