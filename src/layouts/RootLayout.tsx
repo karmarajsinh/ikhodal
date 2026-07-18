@@ -243,10 +243,31 @@ export const RootLayout: React.FC = () => {
           <p className="text-[10px] text-zinc-400 dark:text-zinc-500 font-sans">
             © {new Date().getFullYear()} ikhodal.com. All Rights Reserved. Devotionally crafted.
           </p>
+        <div className="text-[10px] text-zinc-400 dark:text-zinc-500 flex flex-col sm:flex-row items-center gap-2 font-sans">
+  <p className="flex items-center gap-1">
+    Built with{" "}
+    <Heart className="w-3 h-3 text-crimson-800 dark:text-gold fill-current" />
+    for spiritual seekers worldwide.
+  </p>
+
+  <span className="hidden sm:inline">•</span>
+
+  <a
+    href="mailto:team@ikhodal.com"
+    className="hover:text-crimson-800 dark:hover:text-gold transition-colors"
+  >
+    team@ikhodal.com
+  </a>
+</div>
+        </div>
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-zinc-200 dark:border-zinc-800 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 font-sans">
+            © {new Date().getFullYear()} ikhodal.com. All Rights Reserved. Devotionally crafted.
+          </p>
           <p className="text-[10px] text-zinc-400 dark:text-zinc-500 flex items-center gap-1 font-sans justify-center">
             Built with <Heart className="w-3 h-3 text-crimson-800 dark:text-gold fill-current" /> for spiritual seekers worldwide.
           </p>
-        </div>
+        </div> */}
       </footer>
 
       {/* Persistent Audio Media Player */}
